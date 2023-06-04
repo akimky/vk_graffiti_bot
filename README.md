@@ -34,7 +34,7 @@ on Windows(via vcpkg).
 vcpkg install curl
 vcpkg install sfml
 ```
-- Next, create a build folder and build the project.
+- Next, create a build folder and build the project. From the root directory.
 ```sh
 mkdir build && cd build
 cmake ..
