@@ -40,7 +40,7 @@ mkdir build && cd build
 cmake ..
 cmake --build .
 ```
-- Turn on the messages of the grup.
+- Turn on the messages of the group.
 - Enable the Long Poll API by specifying event types such as: incoming and outgoing messages.
 - Create an access_token and grant it access to group management, group photos and messages.
 - In the file located on the path vk_graffiti_bot/group_data/group_data.json specify your access_token and group_id.
