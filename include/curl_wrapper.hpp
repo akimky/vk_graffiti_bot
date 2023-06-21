@@ -17,7 +17,7 @@
 VK_GRAFFITI_BOT_BEGIN
 class curl_wrapper {
 private:
-    using image_data_type      = std::vector<std::byte>;
+    using _image_data_type     = std::vector<std::byte>;
     using _write_function_type = std::size_t(*)(const void*, const std::size_t, const std::size_t, void*);
 
     enum class _write_state {
@@ -69,7 +69,7 @@ private:
             _set_write_function(_write_to_container<std::string>);
         break;
         case _write_state::to_image:
-            _set_write_function(_write_to_container<image_data_type>);
+            _set_write_function(_write_to_container<_image_data_type>);
         break;
         default:
             throw std::runtime_error(VK_GRAFFITI_BOT_FUNC_MSG("not correct write state"));
@@ -118,7 +118,7 @@ public:
 
     inline void perform(const std::string& url, sf::Image& answer) {
         _set_write_state(_write_state::to_image);
-        image_data_type image_data;
+        _image_data_type image_data;
         _set_write_data(static_cast<void*>(&image_data));
         _perform(url);
         const bool load_image_result =
