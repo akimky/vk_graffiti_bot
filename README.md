@@ -10,7 +10,7 @@ vk_graffiti_bot is a vk bot for rendering text on a photo, written in c++17 with
 Send the bot a message with the text you want to draw on the photo and the photo itself. In response, you will receive a processed photo.
 If the size of the text does not suit you, you can explicitly specify it before the text. For example: "150 my text", where 150 is the size of the text.
 
-# How to launch a bot for my group?
+# How to launch the bot for my group?
 To launch a bot in your group, you need to follow a few steps.
 - Сlone the repository to your computer.
 If you use https.
