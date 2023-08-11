@@ -13,14 +13,10 @@ If the size of the text does not suit you, you can explicitly specify it before 
 # How to launch the bot for my group?
 To launch a bot in your group, you need to follow a few steps.
 - Сlone the repository to your computer.
-If you use https.
 ```sh
 git clone https://github.com/Akimpaus/vk_graffiti_bot.git
 ```
-If you use ssh.
-```sh
-git clone git@github.com:Akimpaus/vk_graffiti_bot.git
-```
+
 - Install the necessary libraries.
 It is necessary for CMake to be able to find libcurl and SFML graphics module.
 The following is an example using a package manager.
